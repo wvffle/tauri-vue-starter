@@ -47,7 +47,12 @@
       }
     },
     "updater": {
-      "active": false
+      "active": false,
+      "endpoints": [
+        "https://n8n.wvffle.net/webhook/check-tauri-updates?repo=OWNER/REPO&version={{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "PUBLIC KEY"
     },
     "allowlist": {
       "all": true
